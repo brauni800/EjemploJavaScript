@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<script type="text/javascript" lenguage="javascript">
+			function mensaje(entrada) {
+				switch(entrada) {
+					case 0:
+						alert("Mi primer script y el valor es: " + entrada);
+						break;
+					case 1:
+						alert("pushaste la imagen y el valor es: " + entrada);
+						break;
+					case 2:
+						alert("el resultado es: " + sumar(2, 2));
+						break;
+					case 5:
+						var week = diaSemana();
+						alert(week);
+						break;
+					default:
+						alert("Nada");
+						break;
+				}
+			}
+			function sumar(valor1, valor2) {
+				return valor1 + valor2;
+			}
+			function diaSemana() {
+				valSemana = prompt("Introduzca un numero y te devolvera dia de la semana", "Escriba aqui");
+				switch(valSemana) {
+					case "1":
+						return "Lunes";
+					case "2":
+						return "Martes";
+					case "3":
+						return "Miercoles";
+					case "4":
+						return "Jueves";
+					case "5":
+						return "Viernes";
+					case "6":
+						return "Sabado";
+					case "7":
+						return "Domingo";
+					default:
+						return "No existe ese dia de la semana";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="contenedor">
+			<div id="cabecera">
+				<h1>Cabecera</h1>
+			</div>
+			<div id="menu">
+				<h3>Menu</h3>
+			</div>
+			<div id="contenido">
+				<div id="primario">
+					<h3>Primario</h3>
+				</div>
+				<div id="secundario">
+					<h3>Secundario</h3>
+					<input type="button" value="Guardar" onclick="mensaje(0)">
+					<img src="./images/imagen1.jpg" width="250" height="250" onclick="mensaje(1)">
+					<input type="button" value="Suma" onclick="mensaje(2)">
+					<input type="button" value="Semana" onclick="mensaje(5)">
+				</div>
+			</div>
+			<div id="pie">
+				<h4>Pie de pagina</h4>
+			</div>
+		</div>
+	</body>
+</html>
