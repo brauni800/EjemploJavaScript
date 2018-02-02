@@ -29,20 +29,21 @@
 			}
 			function diaSemana() {
 				valSemana = prompt("Introduzca un numero y te devolvera dia de la semana", "Escriba aqui");
-				switch(valSemana) {
-					case "1":
+				var valSemanaInt = parseInt(valSemana);
+				switch(valSemanaInt) {
+					case 1:
 						return "Lunes";
-					case "2":
+					case 2:
 						return "Martes";
-					case "3":
+					case 3:
 						return "Miercoles";
-					case "4":
+					case 4:
 						return "Jueves";
-					case "5":
+					case 5:
 						return "Viernes";
-					case "6":
+					case 6:
 						return "Sabado";
-					case "7":
+					case 7:
 						return "Domingo";
 					default:
 						return "No existe ese dia de la semana";
